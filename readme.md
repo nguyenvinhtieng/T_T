@@ -38,23 +38,23 @@ Common:
   Register ( User Account - Freelancer Account)
 
 Admin:
-  Trang duyệt bài tập
-  Trang quản lý user
-  Trang quản lý freelancer
-  Trang chat với User (logic khó)
-  Trang chat với Freelancer (logic khó)
-  Quản lý category (not required)
-  Thông báo (not required)
+  + Trang duyệt bài tập
+  + Trang quản lý user
+  + Trang quản lý freelancer
+  + Trang chat với User (logic khó)
+  + Trang chat với Freelancer (logic khó)
+  + Quản lý category (not required)
+  + Thông báo (not required)
 
 User:
-  Tạo bài tập
-  Bài tập của tôi (Edit + Delete + View)
-  Chat
-  Thông báo (Khi có ai nhận hoặc gì đó)
+  + Tạo bài tập
+  + Bài tập của tôi (Edit + Delete + View)
+  + Chat
+  + Thông báo (Khi có ai nhận hoặc gì đó)
 
 Freelancer:
-  Newfeed các bài tập available
-  My Job
-  Chat
-  My information 
-  Thông báo
+  + Newsfeed các bài tập available
+  + My Job
+  + Chat
+  + My information 
+  + Thông báo
