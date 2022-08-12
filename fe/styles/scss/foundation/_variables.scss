@@ -1,0 +1,92 @@
+// color
+$primary: #F5F2EB;
+
+//breakpoint
+$xs: 375;
+$sm: 768;
+$md: 1025;
+$lg: 1240;
+
+$xs-1: $xs - 1;
+$sm-1: $sm - 1;
+$md-1: $md - 1;
+$lg-1: $lg - 1;
+
+$xsMin: 'min-width:' + $xs + 'px';
+$smMin: 'min-width:' + $sm + 'px';
+$mdMin: 'min-width:' + $md + 'px';
+$lgMin: 'min-width:' + $lg + 'px';
+
+$xsMax: 'max-width:' + $xs-1 + 'px';
+$smMax: 'max-width:' + $sm-1 + 'px';
+$mdMax: 'max-width:' + $md-1 + 'px';
+$lgMax: 'max-width:' + $lg-1 + 'px';
+
+
+//mixin
+
+@function sm_vw($size, $viewport:$smDesignW){
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+@function md_vw($size, $viewport:$mdDesignW){
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+
+@mixin transition {
+  transition: all .3s linear;
+}
+
+//media query
+@mixin xsMin {
+  @media print, screen and ($xsMin) {
+    @content;
+  }
+}
+@mixin smMin {
+  @media print, screen and ($smMin) {
+    @content;
+  }
+}
+@mixin mdMin {
+  @media print, screen and ($mdMin) {
+    @content;
+  }
+}
+@mixin lgMin {
+  @media print, screen and ($lgMin) {
+    @content;
+  }
+}
+@mixin xsMax {
+  @media screen and ($xsMax) {
+    @content;
+  }
+}
+@mixin smMax {
+  @media screen and ($smMax) {
+    @content;
+  }
+}
+@mixin mdMax {
+  @media screen and ($mdMax) {
+    @content;
+  }
+}
+@mixin lgMax {
+  @media screen and ($lgMax) {
+    @content;
+  }
+}
+@mixin max-screen($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin min-screen($breakpoint) {
+  @media print, screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
