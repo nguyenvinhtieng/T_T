@@ -48,4 +48,224 @@ h6 {
   font-family: "CustomFont";
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pageContent {
+  margin-left: 80px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  padding: 10px 16px;
+  height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-weight: bold;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.header__slogan {
+  flex: 1;
+  margin-left: 10px;
+}
+.header__auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__auth a {
+  margin-right: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #232323;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 30px 30px 0 0;
+}
+.footer__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__contact-item a {
+  padding: 4px 10px;
+  margin: 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.footer__contact-item a svg {
+  margin-left: 6px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+}
+.sidebar__main {
+  padding: 0 10px;
+}
+.sidebar__item {
+  margin-top: 16px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.sidebar__item:hover {
+  background-color: #f5f5f5;
+}
+.sidebar__item:hover .icon, .sidebar__item:hover .txt {
+  color: #2C6EF1;
+}
+.sidebar__item .icon, .sidebar__item .txt {
+  transition: all 0.2s linear;
+}
+.sidebar__item .txt {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.2s linear;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn01 {
+  background-color: #fff;
+  color: #2C6EF1;
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+.btn01:hover {
+  background-color: #fff;
+  color: #2C6EF1;
+  border-radius: 0;
+  border: 1px solid #2C6EF1;
+}
+.btn02 {
+  background-color: #2C6EF1;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 18px;
+}
+.btn02:hover {
+  background-color: #fff;
+  color: #2C6EF1;
+  border-radius: 0;
+  border: 1px solid #2C6EF1;
+}
+.btn03 {
+  padding: 14px 20px;
+  width: 100%;
+  background-color: #577FE3;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+.btn03:hover {
+  opacity: 0.8;
+}
+.btn04 {
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #41BF8B;
+  color: #fff;
+  transition: all 0.2s linear;
+}
+.btn04:hover {
+  opacity: 0.8;
+}
+
+.txt-gray {
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+  display: block;
+}
+
+.auth {
+  max-width: 400px;
+  margin: 50px auto;
+}
+.auth__header {
+  font-size: 2.4rem;
+}
+.auth form {
+  margin-top: 20px;
+}
+.auth form .input__field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.auth form .input__field input[type=text], .auth form .input__field input[type=password] {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color: #f6f6f6;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+}
+.auth form .input__field input[type=text]:focus, .auth form .input__field input[type=password]:focus {
+  border: 1px solid #2C6EF1;
+  background-color: #fff;
+}
+.auth form .input__field .note {
+  font-size: 1.1rem;
+}
+.auth form .input__field .note.infor {
+  color: #2C6EF1;
+  font-weight: bold;
+}
+.auth form .input__field select {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #999;
+  background-color: #f6f6f6;
+  outline: none;
+  border-radius: 4px;
+}
+
 /*# sourceMappingURL=globals.css.map */

@@ -1,0 +1,46 @@
+.auth {
+  max-width: 400px;
+  margin: 50px auto;
+  &__header {
+    font-size: 2.4rem;
+  }
+  form {
+    margin-top: 20px;
+    .input__field {
+      width: 100%;
+      margin-bottom: 16px;
+      input[type="text"],input[type="password"] {
+        width: 100%;
+        padding: 10px 20px;
+        outline: none;
+        border:none;
+        background-color: #f6f6f6;
+        overflow: hidden;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        transition: all 0.2s linear;
+        &:focus {
+          border: 1px solid $primary;
+          background-color: #fff;
+        }
+      }
+      .note {
+        font-size: 1.1rem;
+        &.infor {
+          color: $primary;
+          font-weight: bold;
+        }
+      }
+      select {
+        width: 100%;
+        padding: 10px 10px;
+        border: 1px solid #999;
+        background-color: #f6f6f6;
+        outline: none;
+        border-radius: 4px;
+      }
+    }
+
+  }
+  
+}

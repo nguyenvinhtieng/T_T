@@ -1,5 +1,23 @@
+
+// FOUNDATION
 @import "foundation/_reset.scss";
 @import "foundation/_fonts.scss";
 @import "foundation/_variables.scss";
 @import "foundation/_base.scss";
+
+// OBJECTS
 @import "object/_header.scss";
+@import "object/_footer.scss";
+@import "object/_sidebar.scss";
+
+// COMPONENT
+@import "common/_btn.scss";
+@import "common/_txt.scss";
+
+// LAYOUTS
+
+
+// UTILS
+
+// PAGES
+@import "pages/_auth.scss";

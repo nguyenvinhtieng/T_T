@@ -1,0 +1,27 @@
+.header {
+  padding: 10px 16px;
+  height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: #F0F5FE;
+  &__logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  &__slogan {
+    flex: 1;
+    margin-left: 10px;
+  }
+  &__auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+      margin-right: 10px;
+    }
+  }
+}

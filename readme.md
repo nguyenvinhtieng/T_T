@@ -1,3 +1,6 @@
+# Command 
+```sass ./fe/styles/scss/style.scss ./fe/styles/globals.css -w```
+
 # Actor: 
 - Admin
 - User
